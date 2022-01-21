@@ -19,7 +19,8 @@ public class EnemyGenerator : MonoBehaviour
             this.delta = 0;
 
             GameObject enemyAGo =  Instantiate<GameObject>(this.enemyAPrefab);
-            float randx = Random.Range(-2, 2 + 1);
+            //https://docs.unity3d.com/ScriptReference/Random.Range.html
+            float randx = Random.Range(-2, 2);
             float posy = 5.76f;
             enemyAGo.transform.position = new Vector3(randx, posy, 0);
 
